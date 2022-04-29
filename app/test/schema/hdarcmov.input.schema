@@ -1,0 +1,475 @@
+{
+  "namespace": "cbil",
+  "name": "t_crch_hdarcmov_mvtos_recaudos",
+  "doc": "Tabla que contiene los movimientos de los pagos de convenios de recaudos nacionales",
+  "database": "raw",
+  "storageZone": "Rawdata",
+  "storageType": "HDFS-Avro",
+  "physicalPath": "/data/raw/crch/data/t_crch_hdarcmov_mvtos_recaudos",
+  "partitions": ["partition_data_year_id", "partition_data_month_id", "partition_data_day_id"],
+  "type": "record",
+  "fields": [{
+    "name": "entity_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(6)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "raise_money_type",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "raise_money_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(8)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "raise_money_class_type",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "ben_contract_entity_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "ben_contract_branch_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "ben_contract_product_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "ben_contract_sequence_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(8)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "movement_date",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "movement_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "movement1_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "movement_status_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "source_branch_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "payment_method_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "movement_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(16)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "additional_payment_tax_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(16)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "cash_payment_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(16)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "check_payment_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(16)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "other_payment_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(16)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "movement_fee_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(16)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "tax_over_fee_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(16)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "return_checks_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(16)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "invoice_total_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(16)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "payment_type_number",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "ben_town_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(5)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "free_field_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "terminal_exec_trans_number_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(5)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "invoice_reference_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(48)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "movement_reference_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(30)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "other_information_desc",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(100)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "raise_money_cmsn_debit_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "applied_commission_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "raise_money_channel_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "validate_vs_database_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "process_execution_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "notification_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "value_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "gl_account_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "currency_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "movement_annulation_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "free_field_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "free_field_1_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "free_field_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(16)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "free_field_1_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(16)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "free_field_2_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(16)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "free_field_number",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(30)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "free_field_1_number",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(30)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "free_field_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "multifacture_payment_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "free_field_1_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "free_field_2_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "hybrid_raise_money_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "audit_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(26)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd-HH.mm.ss.SSSSSS"
+  }, {
+    "name": "creation_user_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(8)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "creation_terminal_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "creation_transaction_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "creation_prog_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(8)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "annulation_audit_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(26)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd-HH.mm.ss.SSSSSS"
+  }, {
+    "name": "annulation_user_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(8)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "annulation_terminal_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "annulation_transaction_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "annulation_program_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(8)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_year_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_month_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_day_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }]
+}

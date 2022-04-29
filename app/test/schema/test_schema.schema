@@ -1,0 +1,68 @@
+{
+  "namespace": "cbil",
+  "name": "t_cbil_hdarcmov_mvtos_recaudos",
+  "doc": "Tabla que contiene los movimientos de los pagos de convenios de recaudos nacionales",
+  "database": "master",
+  "storageZone": "Masterdata",
+  "storageType": "HDFS-Parquet",
+  "physicalPath": "/data/master/productsservices/cbil/data/t_cbil_hdarcmov_mvtos_recaudos",
+  "partitions": ["partition_data_year_id", "partition_data_month_id", "partition_data_day_id"],
+  "securityLevel": "L1",
+  "type": "record",
+  "fields": [{
+    "name": "entity_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(6)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "raise_money_type",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  },{
+    "name": "movement_date",
+    "type": "date",
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  },{
+    "name": "movement1_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  },{
+    "name": "movement_amount",
+    "type": "decimal(16,2)",
+    "logicalFormat": "DECIMAL(16,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(16,2)",
+    "locale": "co"
+  },{
+    "name": "cash_payment_amount",
+    "type": ["null", "decimal(16,2)"],
+    "logicalFormat": "DECIMAL(16,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(16,2)",
+    "locale": "co"
+  },{
+    "name": "payment_type_number",
+    "type": ["null", "int32"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": null
+  }]
+}

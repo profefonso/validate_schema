@@ -1,0 +1,28 @@
+entity_id
+[<pandas_schema.validation.LeadingWhitespaceValidation object at 0x11f2c1550>, <pandas_schema.validation.CustomElementValidation object at 0x114cdd4f0>]
+raise_money_type
+[<pandas_schema.validation.LeadingWhitespaceValidation object at 0x11f2cda30>, <pandas_schema.validation.CustomElementValidation object at 0x11f2cd910>]
+movement_date
+[<pandas_schema.validation.LeadingWhitespaceValidation object at 0x11f2cdb20>, <pandas_schema.validation.DateFormatValidation object at 0x11f2cdbb0>]
+movement1_id
+[<pandas_schema.validation.LeadingWhitespaceValidation object at 0x11f2cdc40>]
+movement_amount
+[<pandas_schema.validation.LeadingWhitespaceValidation object at 0x11f2cdcd0>, <pandas_schema.validation.CustomElementValidation object at 0x11f2cd940>, <pandas_schema.validation.CustomElementValidation object at 0x11f2cdac0>]
+cash_payment_amount
+[<pandas_schema.validation.LeadingWhitespaceValidation object at 0x11f2cdeb0>, <pandas_schema.validation.CustomElementValidation object at 0x11f2cda00>]
+payment_type_number
+[<pandas_schema.validation.LeadingWhitespaceValidation object at 0x11f2da040>, <pandas_schema.validation.CustomElementValidation object at 0x11f2cdd90>]
+   entity_id  raise_money_type movement_date  movement1_id  movement_amount  \
+0     123456              1010    2022-04-28         61669          4320000   
+1     997956              1010    2022-01-30         61449                0   
+2     102443              1010    2022-01-24         61669              500   
+3     888886              1010    2022-05-15         23212          1200000   
+4         56              1010    2022-02-12         61669            20000   
+
+   cash_payment_amount  payment_type_number  
+0              4320000                    4  
+1              4320000                   15  
+2              4320000                   33  
+3              4320000                  400  
+4              4320000                    6  
+{row: 9, column: "movement_date"}: "2022-17-05" does not match the date format string "%Y-%m-%d"
