@@ -1,0 +1,810 @@
+{
+  "namespace": "camd",
+  "name": "t_cdid_ddadiportd_portafolio_dia",
+  "doc": "Archivo que contiene informacion de los titulos de renta fija en propiedad del banco. Proviene de Dialogo",
+  "database": "raw",
+  "storageZone": "Rawdata",
+  "storageType": "HDFS-Avro",
+  "physicalPath": "/data/raw/cdid/data/t_cdid_ddadiportd_portafolio_dia",
+  "partitions": ["partition_data_year_id", "partition_data_month_id", "partition_data_day_id"],
+  "type": "record",
+  "fields": [{
+    "name": "original_portfolio_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "portfolio_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "portfolio_type_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(50)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "value_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "security_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(30)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "isin_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(12)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "issuing_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "issuing_entity_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(50)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "original_expiry_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "flow_start_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "flow_end_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "coupon_interest_per",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(13)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(13,8)"
+  }, {
+    "name": "value_title_internal_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "value_title_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(50)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "securities_nominal_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(18)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(18,3)"
+  }, {
+    "name": "financial_resid_val_cust_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(18)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(18,3)"
+  }, {
+    "name": "currency_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "caused_day_number",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "operation_clean_price_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(10,5)"
+  }, {
+    "name": "title_purchase_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(21)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(21,3)"
+  }, {
+    "name": "title_interest_per",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(17)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(17,5)"
+  }, {
+    "name": "title_current_interest_per",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(20,7)"
+  }, {
+    "name": "title_accounting_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(18)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(18,3)"
+  }, {
+    "name": "title_purchase_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "ytm_per",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(20,15)"
+  }, {
+    "name": "year_irr_per",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(20,15)"
+  }, {
+    "name": "year_irr1_per",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(20,15)"
+  }, {
+    "name": "dirty_price_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(11)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(11,5)"
+  }, {
+    "name": "title_state_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(50)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "variable_rate_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "variable_rate_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(50)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "nominal_interest_per",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(14)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(14,9)"
+  }, {
+    "name": "sign_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "macaulay_duration_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(20,14)"
+  }, {
+    "name": "discounted_total_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(18)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(18,5)"
+  }, {
+    "name": "issuing_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "report_expiration_day_number",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "amortization_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "payment_frequency_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "payment_frequency_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(50)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "val_title_custody_company_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "custodian_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(50)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "basis_calculation_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "basis_calculation_desc",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "contract_interest_rate_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "interest_rate_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(50)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "interest_spread_per",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(7)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(7,3)"
+  }, {
+    "name": "coupon_term_days_number",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "curr_creditor_interest_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "gl_account_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(9)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "company_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "stock_exch_title_mnemonic_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(12)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "mtm_pv_d_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(18)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(18,3)"
+  }, {
+    "name": "current_day_title_cause_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(18)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(18,3)"
+  }, {
+    "name": "prev_day_title_cause_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(18)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(18,3)"
+  }, {
+    "name": "curr_day_origin_cuncy_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(18)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(18,3)"
+  }, {
+    "name": "prev_day_origin_cuncy_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(18)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(18,3)"
+  }, {
+    "name": "current_day_premium_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(24)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(24,11)"
+  }, {
+    "name": "previous_day_premium_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(24)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(24,11)"
+  }, {
+    "name": "previous_day_int_title_per",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(17)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(17,5)"
+  }, {
+    "name": "modified_duration_per",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(10,5)"
+  }, {
+    "name": "cntnr_fld_identification_desc",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(13)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "fin_residual_val_cust1_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(18)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(18,3)"
+  }, {
+    "name": "modified_duration1_per",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(21)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(21,17)"
+  }, {
+    "name": "title_guarantee_status_desc",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(50)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "contract_accounting_branch_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "current_patrimony_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(20,3)"
+  }, {
+    "name": "previous_patrimony_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(20,3)"
+  }, {
+    "name": "isin1_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(50)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "title_share_number",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "share_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "cop_purchase_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(18)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(18,3)"
+  }, {
+    "name": "interest_purchase_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "variable_rate1_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "dividend_dist_last_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "dividend_distribution_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(14)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(14,1)"
+  }, {
+    "name": "title_qualification_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "rating_entity_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "issuer_risk_qualification_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "guarantor_qualification_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "value_title_local_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(12)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "loss_profit_account_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(6)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "interest_caused_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(14)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(14,3)"
+  }, {
+    "name": "patrimony_causation_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "patrimony_caused_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(8)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(8,1)"
+  }, {
+    "name": "market_money_reasonable_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(16)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(16,3)"
+  }, {
+    "name": "title_market_operation_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(8)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "issuer_personal_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "issuer_personal_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(9)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "legal_status_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "company_economic_activity_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "issuer_linked_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "price_provider_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "interest_purchase1_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "product_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(18)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "source_system_customer_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(18)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "cost_product_portfolio_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(18)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "gl_operation_pnl_account_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "gl_oper_premium_pnl_account_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "gl_oper_rof_pnl_account_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "gl_oper_valtn_pnl_account_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "gl_operation_order_account_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "original_value_title_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(30)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "previous_value_title_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(35)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_year_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": true,
+    "default": ""
+  }, {
+    "name": "partition_data_month_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": true,
+    "default": ""
+  }, {
+    "name": "partition_data_day_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": true,
+    "default": ""
+  }, {
+    "name": "operational_audit_insert_date",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(26)",
+    "deleted": false,
+    "metadata": true,
+    "default": "",
+    "format": "yyyy-MM-dd HH:mm:ss.SSSSSS"
+  }]
+}

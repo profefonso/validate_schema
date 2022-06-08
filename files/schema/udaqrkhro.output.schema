@@ -1,0 +1,379 @@
+{
+  "namespace": "cfcm",
+  "name": "t_cfcm_udaqrkhro_khronos_pqr",
+  "doc": "Fichero que contiene la informacion de las preguntas, quejas y reclamos",
+  "database": "master",
+  "storageZone": "Masterdata",
+  "storageType": "HDFS-Parquet",
+  "physicalPath": "/data/master/commercialdelivery/cfcm/data/t_cfcm_udaqrkhro_khronos_pqr",
+  "partitions": ["partition_data_year_id", "partition_data_month_id", "partition_data_day_id"],
+  "securityLevel": "L2",
+  "type": "record",
+  "fields": [{
+    "name": "pqr_register_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "pqr_management_unit_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(30)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pqr_manager_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(35)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "commercial_product_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(36)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "contract_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(25)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "customer_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(62)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "personal_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(18)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "personal_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "customer_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(13)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pqr_khronos_origin_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "control_entity_pqr_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(48)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "khronos_pqr_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(21)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pqr_general_topic_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pqr_specific_topic_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pqr_reason_desc",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4000)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "new_pqr_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(27)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pqr_responsible_unit_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(5)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pqr_responsible_unit_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(51)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pqr_responsible_unit_employee_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(32)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pqr_resp_analysis_unit_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(5)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pqr_resp_analysis_unit_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(51)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pqr_name_responsible_analyst_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(32)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "claim_close_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "claim_expiry_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "pqr_khronos_last_change_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "pqr_apprv_extension_number",
+    "type": ["null", "int32"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": null
+  }, {
+    "name": "pqr_denied_extension_number",
+    "type": ["null", "int32"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": null
+  }, {
+    "name": "pqr_extension_total_number",
+    "type": ["null", "int32"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": null
+  }, {
+    "name": "pqr_status_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(24)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pqr_management_channel_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "address_desc",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(149)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "address_town_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(33)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pqr_analyst_est_real_amount",
+    "type": ["null", "decimal(8,0)"],
+    "logicalFormat": "DECIMAL(8,0)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(8,0)",
+    "locale": "co"
+  }, {
+    "name": "pqr_customer_reclaimed_amount",
+    "type": ["null", "decimal(8,0)"],
+    "logicalFormat": "DECIMAL(8,0)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(8,0)",
+    "locale": "co"
+  }, {
+    "name": "pqr_entity_accepted_amount",
+    "type": ["null", "decimal(8,0)"],
+    "logicalFormat": "DECIMAL(8,0)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(8,0)",
+    "locale": "co"
+  }, {
+    "name": "pqr_final_verdict_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(32)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pqr_end_responsible_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(32)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pqr_source_unit_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(29)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pqr_reason_short_desc",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(104)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "container_pqr_atm_desc",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(55)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pqr_causative_unit_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pqr_initial_topic_desc",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(48)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pqr_specific_initial_topic_desc",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(108)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "prq_final_classification_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(19)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "phone_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(17)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "email_desc",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(49)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_year_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_month_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_day_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "operational_audit_insert_date",
+    "type": "timestamp",
+    "logicalFormat": "TIMESTAMP",
+    "deleted": false,
+    "metadata": true,
+    "default": "",
+    "format": "yyyy-MM-dd HH:mm:ss.SSSSSS",
+    "locale": "co"
+  }]
+}

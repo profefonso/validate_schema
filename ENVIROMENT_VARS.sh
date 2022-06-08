@@ -1,0 +1,2 @@
+export USER_NAME_ARTIFACTORY=""
+export API_KEY_ARTIFACTORY=""

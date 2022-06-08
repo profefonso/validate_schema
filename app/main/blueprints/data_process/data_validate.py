@@ -107,19 +107,30 @@ class DataValidate():
             
         df = self.read_file(path_data, list_widths, columns_name)
         error_descrip, result_validate = self.validate_schema(df, list_schema_val)
-        data_example = df.head(5).to_csv(index=False).strip('\n').split('\n')
+        # data_example = df.head(5).to_csv(index=False).strip('\n').split('\n')
+        data_example = df.to_json(orient = 'split')
 
         return data_example, error_descrip, result_validate
 
     
     def validate_schema(self, data_f, list_schema_val):
-        error_descrip = ""
+        error_descrip = []
         result_validate = "The file corresponds to the schema!"
         schema = Schema(list_schema_val)
         errors = schema.validate(data_f)
 
         for error in errors:
-            result_validate = "The file contains validation errors"
-            error_descrip = error_descrip + str(error)
+            try:
+                error_line = {}
+                error_text = str(error)
+                error_line["row"] = error_text.split("}")[0].split(",")[0].split(":")[1]
+                error_line["column"] = error_text.split("}")[0].split(",")[1].split(":")[1]
+                error_line["value"] = error_text.split("}")[1].split("\"")[1]
+                error_line["description"] = error_text.split("}")[1].split("\"")[2]
+                error_descrip.append(error_line)
+            except Exception as e:
+                pass
+            result_validate = "The file contains validation errors!"
+            #error_descrip = error_descrip + str(error)
         
-        return error_descrip, result_validate
+        return json.dumps({"data" : error_descrip}), result_validate

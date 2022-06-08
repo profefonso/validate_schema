@@ -1,0 +1,181 @@
+{
+  "namespace": "bida",
+  "name": "t_ctcx_xdatcprodu_desc_productos",
+  "doc": "Tabla maestra de configuracion de productos de seguros en el aplicativo AcselX",
+  "database": "raw",
+  "storageZone": "Rawdata",
+  "storageType": "HDFS-Avro",
+  "physicalPath": "/data/raw/ctcx/data/t_ctcx_xdatcprodu_desc_productos",
+  "partitions": ["partition_data_year_id", "partition_data_month_id", "partition_data_day_id"],
+  "type": "record",
+  "fields": [{
+    "name": "policy_product_type",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "policy_product_name",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(50)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "policy_status_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "multi_bunch_policy_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "multi_plan_policy_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "policy_subscription_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "accepted_currency_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pcy_emision_retr_days_number",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "insurance_company_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "due_pcy_bill_wtng_days_number",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pcy_renewal_possibility_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pcy_renewal_days_max_number",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "life_annuity_plan_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pcy_cert_expense_factor_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pcy_extension_days_max_number",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "insurance_policy_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partial_payment_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "policy_floating_estate_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "information_massive_load_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "accident_massive_load_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_year_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": true,
+    "default": ""
+  }, {
+    "name": "partition_data_month_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": true,
+    "default": ""
+  }, {
+    "name": "partition_data_day_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": true,
+    "default": ""
+  }, {
+    "name": "operational_audit_insert_date",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(26)",
+    "deleted": false,
+    "metadata": true,
+    "default": "",
+    "format": "yyyy-MM-dd HH:mm:ss.SSSSSS"
+  }]
+}
