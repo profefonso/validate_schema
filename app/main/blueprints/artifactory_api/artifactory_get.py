@@ -65,4 +65,4 @@ class GetArtifactory:
         except Exception as e:
             print(e)
         
-            return ""
+            return "Error"

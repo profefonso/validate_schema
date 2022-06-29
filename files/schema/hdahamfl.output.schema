@@ -1,0 +1,1481 @@
+{
+  "namespace": "cdar",
+  "name": "t_cdar_hdahamfl_maest_fail",
+  "doc": "Archivo que contiene el repositorio de contratos con intentos de cobro fallido",
+  "database": "master",
+  "storageZone": "Masterdata",
+  "storageType": "HDFS-Parquet",
+  "physicalPath": "/data/master/risk/cdar/data/t_cdar_hdahamfl_maest_fail",
+  "securityLevel": "L2",
+  "type": "record",
+  "fields": [{
+    "name": "data_date",
+    "type": "date",
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd.HH.MM.SS.ssssss",
+    "locale": "co"
+  }, {
+    "name": "contract_country_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "contract_entity_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "contract_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(49)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "entity_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "branch_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(6)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "current_contract_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(42)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "contract_detail_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(50)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "contract_drawn_balance_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "contract_early_arrear_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "contract_exceeded_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "contract_real_deafult_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "contract_subject_default_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "contract_carryf_default_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "contract_failed_default_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "contract_unused_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "contract_doubtful_unused_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "contract_rest_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "limit_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "contract_resi_financial_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "contract_market_market_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "contract_current_risk_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "client_drawn_balance_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "client_early_arrear_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "client_exceeded_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "client_real_deafult_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "client_subject_default_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "client_carryfo_default_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "client_unused_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "client_doubtful_unused_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "client_rest_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "client_residual_financial_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "client_market_market_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "client_current_risk_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "current_scoring_tool_country_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "current_scoring_tool_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(16)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "current_scoring_tool_per",
+    "type": ["null", "decimal(14,6)"],
+    "logicalFormat": "DECIMAL(12,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "current_scoring_tool_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "current_rating_tool_country_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "current_rating_tool_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(16)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "financial_statements_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "current_rating_tool_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "current_rating_tool_per",
+    "type": ["null", "decimal(7,2)"],
+    "logicalFormat": "DECIMAL(7,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "master_scale_rating_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "volume_sales_rating_number",
+    "type": ["null", "decimal(21)"],
+    "logicalFormat": "DECIMAL(21,0)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "up_out_date_rate_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "current_tool_country_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "current_tool_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(16)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "current_tool_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "current_tool_per",
+    "type": ["null", "decimal(14,6)"],
+    "logicalFormat": "DECIMAL(12,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "family_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(7)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "financial_product_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "commercial_product_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "currency_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "local_currenc_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "contract_register_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "current_expiry_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "original_expiry_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "limit_expiration_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "last_entry_ii_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "activity_refinanced_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "contract_reduction_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "contract_last_refinance_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "novation_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "refinancing_number",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "inactivity_card_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "residual_medium_term_amount",
+    "type": ["null", "decimal(5,3)"],
+    "logicalFormat": "DECIMAL(5,3)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "customer_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(9)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "outstanding_payments_number",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "inventory_origin_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "original_cover_per",
+    "type": ["null", "decimal(5,2)"],
+    "logicalFormat": "DECIMAL(5,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "committed_line_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "contract_canceled_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "preapproved_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "auction_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "area_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "last_default_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "gp_start_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "contract_end_lack_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "amortization_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "issuer_customer_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(9)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "portfolio_cnbv_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "fixed_income_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "procurement_bonus_per",
+    "type": ["null", "decimal(11,6)"],
+    "logicalFormat": "DECIMAL(9,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "quotations_bond_per",
+    "type": ["null", "decimal(11,6)"],
+    "logicalFormat": "DECIMAL(9,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "residential_busi_mortgage_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "isin_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(16)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "seniority_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(5)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "initial_interest_rate_per",
+    "type": ["null", "decimal(11,6)"],
+    "logicalFormat": "DECIMAL(9,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "end_default_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "sppi_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "business_model_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "poci_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "local_accounting_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "aa_contract_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "clearing_house_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "holding_product_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "last_renewal_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "impending_expiry_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "zone_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "fico_amount",
+    "type": ["null", "decimal(14,6)"],
+    "logicalFormat": "DECIMAL(14,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "interest_rate_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "efective_interest_rate_per",
+    "type": ["null", "decimal(11,6)"],
+    "logicalFormat": "DECIMAL(9,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "default_probability_per",
+    "type": ["null", "decimal(11,6)"],
+    "logicalFormat": "DECIMAL(9,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "identification_type_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "customer_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "residence_country_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "cnae_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(11)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "institution_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "segment_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(5)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "global_segment_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "aa_sector_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "ias_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "crr_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "client_sales_number",
+    "type": ["null", "decimal(21)"],
+    "logicalFormat": "DECIMAL(21,0)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "enterprise_group_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "client_group_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(9)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "nif_parent_company_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(25)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "sales_group_number",
+    "type": ["null", "decimal(21)"],
+    "logicalFormat": "DECIMAL(21,0)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "consolidation_company_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(5)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "client_profile_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "hat_level_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "watch_list_clasification_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "client_ii_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "client_default_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "promoter_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "out_default_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "client_last_refinanced_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "client_refinanced_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "client_reduction_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "client_beginning_lack_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "client_end_lack_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "finrep_segment_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "sectorial_group_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(11)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "national_foreign_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "employee_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "term_cure_contract_number",
+    "type": ["null", "decimal(8,3)"],
+    "logicalFormat": "DECIMAL(5,3)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "elapsed_term_number",
+    "type": ["null", "decimal(8,3)"],
+    "logicalFormat": "DECIMAL(5,3)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "term_residual_number",
+    "type": ["null", "decimal(8,3)"],
+    "logicalFormat": "DECIMAL(5,3)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "term_revised_number",
+    "type": ["null", "decimal(8,3)"],
+    "logicalFormat": "DECIMAL(5,3)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "term_original_number",
+    "type": ["null", "decimal(8,3)"],
+    "logicalFormat": "DECIMAL(5,3)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "noncompliance_contract_number",
+    "type": ["null", "decimal(8,3)"],
+    "logicalFormat": "DECIMAL(5,3)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "term_last_refinancing_number",
+    "type": ["null", "decimal(8,3)"],
+    "logicalFormat": "DECIMAL(5,3)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "residual_lack_contract_number",
+    "type": ["null", "int32"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": null
+  }, {
+    "name": "term_breach_client_number",
+    "type": ["null", "decimal(8,3)"],
+    "logicalFormat": "DECIMAL(5,3)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "term_residual_lack_client_number",
+    "type": ["null", "int32"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": null
+  }, {
+    "name": "term_cure_client_number",
+    "type": ["null", "decimal(8,3)"],
+    "logicalFormat": "DECIMAL(5,3)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "using_per",
+    "type": ["null", "decimal(11,6)"],
+    "logicalFormat": "DECIMAL(9,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "failed_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "restructuring_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "contract_end_cure_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "contract_cure_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "contract_lack_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "default_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "irregular_investment_number",
+    "type": ["null", "int32"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": null
+  }, {
+    "name": "guarantee_current_year_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(9)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "current_guaranteed_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "client_lack_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "client_situation_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "client_restructuring_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "client_period_end_cure_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "client_cure_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "commercial_letter_credit_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "doubtful_commercial_cred_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "perform_standby_credit_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "doubtful_perfo_standby_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "financial_standby_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "doubtful_finan_standby_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "reference_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(15)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "reference_type_interest_rate_per",
+    "type": ["null", "decimal(11,6)"],
+    "logicalFormat": "DECIMAL(9,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "initial_main_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "product_group_risk_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "product_group_min_opening_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "adjustment_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(8)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "sbif_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "sbif_origl_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "write_offs_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "product_group_limit_amount",
+    "type": ["null", "decimal(19,2)"],
+    "logicalFormat": "DECIMAL(17,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "product_group_antiquity_number",
+    "type": ["null", "decimal(7,3)"],
+    "logicalFormat": "DECIMAL(5,3)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "commercial_residential_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "product_group_use_per",
+    "type": ["null", "decimal(11,6)"],
+    "logicalFormat": "DECIMAL(9,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "vpo_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "gpi_per",
+    "type": ["null", "decimal(7,2)"],
+    "logicalFormat": "DECIMAL(5,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "default_per",
+    "type": ["null", "decimal(11,6)"],
+    "logicalFormat": "DECIMAL(9,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "sra_holder_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "customer_monitoring_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "rsb_avg1_per",
+    "type": ["null", "decimal(11,6)"],
+    "logicalFormat": "DECIMAL(9,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "rsb_avg5_per",
+    "type": ["null", "decimal(11,6)"],
+    "logicalFormat": "DECIMAL(9,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "locale": "co"
+  }, {
+    "name": "customer_ii_days_number",
+    "type": ["null", "int32"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": null
+  }, {
+    "name": "provision_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": true,
+    "default": "N"
+  }, {
+    "name": "entific_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": true,
+    "default": "CO"
+  }, {
+    "name": "audit_date",
+    "type": ["timestamp", "null"],
+    "logicalFormat": "TIMESTAMP",
+    "deleted": false,
+    "metadata": true,
+    "default": "timestamp",
+    "format": "yyyy-MM-dd-HH.mm.ss.SSSSSS",
+    "locale": "co"
+  }]
+}

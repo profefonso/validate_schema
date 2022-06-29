@@ -116,6 +116,13 @@ def validate_artifactory():
             table_env,
             "/Users/alfonsocaro/developer/code/validate_schema/files/schema"
         )
+
+        if filename_schema == "Error":
+            response = jsonify({"result": "Schema no Found!", "example": [], "errors": "[]"})
+            response.status_code = 200
+            response = add_headers(response)
+            return response
+
         path_data = os.path.join("/Users/alfonsocaro/developer/code/validate_schema/files/data", filename_data)
         path_schema = os.path.join("/Users/alfonsocaro/developer/code/validate_schema/files/schema", filename_schema)
         file_d.save(path_data)
